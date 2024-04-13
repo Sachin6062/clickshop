@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <div className="footer-social">
             <h3>Follow Us</h3>
-            <divk className="footer-social--icons">
+            <div className="footer-social--icons">
               <div>
                 <FaDiscord className="icons" />
               </div>
@@ -49,7 +49,7 @@ const Footer = () => {
                   <FaYoutube className="icons" />
               
               </div>
-            </divk>
+            </div>
           </div>
           <div className="footer-contact">
             <h3>Call Us</h3>

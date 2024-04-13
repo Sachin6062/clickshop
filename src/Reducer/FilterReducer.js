@@ -5,7 +5,7 @@ const FilterReducer = (state, action) => {
       let priceArr = action.payload.map((curElem) => curElem.price);
  
       let maxPrice = Math.max(...priceArr);
-      console.log(maxPrice);
+      // console.log(maxPrice);
         return{
             ...state,
             filter_products: [...action.payload],
@@ -107,7 +107,7 @@ const FilterReducer = (state, action) => {
 
             if (price === 0) {
               tempFilterProduct = tempFilterProduct.filter(
-                (curElem) => curElem.price == price
+                (curElem) => curElem.price === price
               );
             } else {
               tempFilterProduct = tempFilterProduct.filter(

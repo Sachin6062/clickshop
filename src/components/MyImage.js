@@ -8,12 +8,12 @@ const MyImage = ({ imgs = [{ url: "" }] }) => {
       <div className="grid grid-four-column">
         {imgs.map((curElem, index) => {
           return (
-            <figure>
+            <figure                 key={index}            >
               <img
                 src={curElem.url}
                 alt={curElem.filename}
                 className="box-image--style"
-                key={index}
+                // key={index}
                 onClick={()=> setMainImgage(curElem)}
               />
             </figure>
